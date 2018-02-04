@@ -1,6 +1,7 @@
-#!/usr/bin/env groovy
+@Library('pipeline-library-demo')_
 
-def call(String name = 'human') {
-  echo "Hello, ${name}."
+stage('Demo') {
+    echo 'Hello world'
+    sayHello 'Dave'
 }
 
